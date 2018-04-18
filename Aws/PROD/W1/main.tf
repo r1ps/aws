@@ -12,5 +12,7 @@
   vpc_security_group_ids        = ["sg-06515d7f"]
   tags {
   "Identity"                  = "NWI-041818-eagle"
+  "Name"                      = "Marc Beckerle"
+  "Company"                   = "HRB"
   }
   }
