@@ -1,0 +1,21 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# terraform
+*.exe
+
+# Workspace
+*.code-Workspace
+
+# Misc
+*.bk
+*.bak
+*.backup
+*.old
