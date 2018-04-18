@@ -19,3 +19,4 @@
 *.bak
 *.backup
 *.old
+.gitignore
