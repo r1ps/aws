@@ -14,7 +14,7 @@ resource "aws_instance" "web" {
 
   tags {
     "Identity" = "NWI-041818-eagle"
-    "Name"     = "Marc Beckerle"
+    "Name"     = "MB"
     "Company"  = "HRB"
   }
 }
