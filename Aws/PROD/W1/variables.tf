@@ -9,3 +9,8 @@ variable "secret_key" {
 variable "region" {
   description = "Default Region"
 }
+
+variable "num_webs" {
+  default = "2"
+
+}

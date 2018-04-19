@@ -15,7 +15,7 @@ resource "aws_instance" "web" {
 
   tags {
     "Identity" = "NWI-041818-eagle"
-    "Name"     = "MB"
+    "Name"     = "web ${count.index+1}/${var.num_webs}"
     "Company"  = "HRB"
   }
 }
