@@ -7,6 +7,7 @@ provider "aws" {
 
 # VM CONFIGURATION
 resource "aws_instance" "web" {
+  count                  = "2"
   ami                    = "ami-493f2f29"
   instance_type          = "t2.micro"
   subnet_id              = "subnet-1f164c78"
@@ -20,9 +21,9 @@ resource "aws_instance" "web" {
 }
 
 output "public_ip" {
-  value = "${aws_instance.web.public_ip}"
+  value = ["${aws_instance.web.*.public_ip}"]
 }
 
 output "public_dns" {
-  value = "${aws_instance.web.public_dns}"
+  value = ["${aws_instance.web.*.public_dns}"]
 }
